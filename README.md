@@ -6,34 +6,6 @@ TraceWise AI is an end-to-end regulated engineering platform that ingests techni
 
 ---
 
-## Screenshots
-
-### Dashboard
-The main dashboard provides an at-a-glance overview of the traceability pipeline — total documents, parsed nodes, generated QA test cases, and stale test counts. Recently uploaded documents are listed with quick access to their tree views.
-
-![Dashboard](screenshots/dashboard.png)
-
-### Tree Explorer
-The Tree Explorer displays the parsed hierarchical structure of any uploaded document. Users can browse sections, subsections, and leaf nodes in a collapsible tree view. Selecting a node reveals its extracted content, content hash, and page number. A side-by-side embedded PDF viewer shows the original source document for verification.
-
-![Tree Explorer](screenshots/tree_explorer.png)
-
-### QA Generator
-The QA Generator allows users to select specific requirement nodes from the document tree and generate professional QA test cases via Groq LLM. Each generated test case includes a title, requirement reference, priority, category, preconditions, execution steps, expected result, and reasoning — all formatted for regulatory compliance.
-
-![QA Generator](screenshots/qa_generator.png)
-
-### Traceability Graph
-The Traceability Graph provides a complete visual lineage of the QA generation pipeline — from the source PDF document through version parsing, node selection, prompt construction, Groq LLM invocation, and finally to the generated QA test suite. The graph includes a validation status indicator, a pipeline timeline, and an export function.
-
-![Traceability Graph](screenshots/traceability_graph.png)
-
-### Traceability Graph — Node Inspection
-Clicking on any node in the traceability graph opens a detailed metadata panel on the right. For test case nodes, this includes the requirement trace type, preconditions, execution steps, and expected results. Path highlighting dims unrelated nodes to focus on the selected node's lineage chain.
-
-![Traceability Detail](screenshots/traceability_detail.png)
-
----
 
 ## Table of Contents
 
@@ -175,6 +147,25 @@ tracewise-ai/
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Tree Explorer
+![Tree Explorer](screenshots/tree_explorer.png)
+
+### QA Generator
+![QA Generator](screenshots/qa_generator.png)
+
+### Traceability Graph
+![Traceability Graph](screenshots/traceability_graph.png)
+
+### Version Comparison
+![Version Comparison](screenshots/version_comparison.png)
 
 ---
 
