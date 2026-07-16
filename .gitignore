@@ -1,0 +1,13 @@
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.env
+uploads/
+tracewise.db
+backend/tests/
+frontend/tests/
+tests/
+*.md
+!README.md
+diff_test.json
