@@ -153,19 +153,39 @@ tracewise-ai/
 ## Screenshots
 
 ### Dashboard
+Overview of the traceability pipeline — summary cards for total documents, parsed nodes, generated QA, and stale tests. Recent documents and traceability activity are shown at a glance.
+
 ![Dashboard](screenshots/dashboard.png)
 
 ### Tree Explorer
+Hierarchical view of a parsed document with collapsible sections. Selecting a node displays its extracted content, content hash, and page number. The original PDF is embedded side-by-side for verification.
+
 ![Tree Explorer](screenshots/tree_explorer.png)
 
 ### QA Generator
+Select requirement nodes from the document tree, then generate professional QA test cases via Groq LLM. Each test case includes title, requirement reference, priority, preconditions, execution steps, expected result, and reasoning.
+
 ![QA Generator](screenshots/qa_generator.png)
 
 ### Traceability Graph
+Interactive React Flow graph showing the full lineage: Document → Version → Selection → Requirements → Prompt → Groq LLM → QA Suite → Test Cases. Includes validation status, pipeline timeline, and export options.
+
 ![Traceability Graph](screenshots/traceability_graph.png)
 
 ### Version Comparison
+Side-by-side diff between two document versions. Shows added, deleted, and modified requirements with word-level change highlighting.
+
 ![Version Comparison](screenshots/version_comparison.png)
+
+### Staleness Dashboard
+Comprehensive staleness analysis with summary metrics, a staleness timeline, and tables for affected QA items and requirement impact. Filters by severity and stale status. Each test case shows its change reason and recommended action.
+
+![Staleness Dashboard](screenshots/staleness_dashboard.png)
+
+### Staleness Trace Modal
+Clicking "Trace" on a stale test case opens an interactive modal showing the exact requirement diff that invalidated it — with additions in green and deletions in red — along with the recommended action.
+
+![Staleness Trace](screenshots/staleness_trace.png)
 
 ---
 
