@@ -10,8 +10,6 @@ import { AlertTriangle, CheckCircle, ArrowLeft, Download, Hash, Database, Clock,
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   ReactFlow,
-  MiniMap,
-  Controls,
   Background,
   useNodesState,
   useEdgesState,
@@ -375,12 +373,6 @@ ${trace.nodes.map(n => `- **${n.title}**: \`${n.content_hash}\``).join('\n')}
             minZoom={0.2}
           >
             <Background color="#64748b" gap={16} size={1} />
-            <Controls className="bg-card border-border shadow-sm" />
-            <MiniMap 
-              className="bg-card border-border shadow-sm rounded-lg" 
-              nodeColor={(n: any) => n.data?.isStale ? '#ef4444' : '#3b82f6'} 
-              maskColor="rgb(0, 0, 0, 0.1)"
-            />
           </ReactFlow>
         </div>
 
